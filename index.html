@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="HealthTrack Logo" class="logo">
+        <h1>HealthTrack Portal</h1>
+        <p>Your digital health record management system</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#profile-update">Update Profile</a></li>
+            <li><a href="#scan-share">Scan & Share</a></li>
+        </ul>
+    </nav>
+
+    <section id="register">
+        <h2>Register for HealthTrack</h2>
+        <form id="registerForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+            <label for="aadhaar">Aadhaar Number:</label>
+            <input type="text" id="aadhaar" name="aadhaar" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+            <label for="abhaNumber">ABHA Number:</label>
+            <input type="text" id="abhaNumber" name="abhaNumber" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="profile-update">
+        <h2>Update Your Profile</h2>
+        <form id="updateForm">
+            <label for="newEmail">New Email:</label>
+            <input type="email" id="newEmail" name="newEmail" required>
+            <label for="newPhone">New Phone Number:</label>
+            <input type="text" id="newPhone" name="newPhone" required>
+            <button type="submit">Update Profile</button>
+        </form>
+    </section>
+
+    <section id="scan-share">
+        <h2>Scan & Share</h2>
+        <p>Share your profile by scanning the QR code at a healthcare institution.</p>
+        <img src="qr-code.png" alt="QR Code" class="qr-code">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 HealthTrack Portal - All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
